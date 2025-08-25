@@ -25,9 +25,31 @@ html:focus-within { scroll-behavior: smooth; }
   --border-strong: color-mix(in oklab, var(--text) 12%, transparent);
   --blur-bg: color-mix(in oklab, var(--panel) 86%, transparent);
 }
-section{
-    padding:90px 130px!important;
+@media screen and (min-width:1024px) {
+    section{
+        padding:90px 130px!important;
+    } 
+    .site-footer{
+        padding:100px 130px!important;
+    }   
 }
+@media screen and (min-width:900px) {
+    section{
+        padding:70px 90px!important;
+    } 
+    .site-footer{
+        padding:100px 90px!important;
+    }   
+}
+@media screen and (min-width:600px) {
+    section{
+        padding:50px 80px!important;
+    }    
+    .site-footer{
+        padding:100px 80px!important;
+    }
+}
+
 
 .section1{
     background:linear-gradient(to right,var(--section_color1),var(--section_color1));
@@ -405,9 +427,7 @@ header .actions img {
     scroll-behavior:smooth;
 }
 
-.site-footer{
-    padding:100px 80px;
-}
+
 .site-footer .bb{
     margin:40px 0;
     border-top:1px solid silver;
