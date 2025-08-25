@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DPTRN Recruit | Elite IT Talent</title>
+  <meta name="description" content="DPTRN Recruit connects ambitious companies with elite IT talent—fast.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="preload" href="script.js" as="script">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand">
+      <img src="assets/icons/logo.svg" alt="DPTRN Recruit logo" width="32" height="32" />
+      <span>DPTRN Recruit</span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="#services">Services</a>
+      <a href="#roles">Open Roles</a>
+      <a href="#process">Process</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact" class="btn btn-primary">Contact</a>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle color theme" title="Toggle color theme">
+        <img src="assets/icons/theme.svg" alt="" />
+      </button>
+      <button id="menuToggle" class="icon-btn" aria-label="Toggle menu" title="Toggle menu">
+        <img src="assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Find elite <span class="accent">IT talent</span> on demand.</h1>
+        <p>We help startups and enterprises hire senior developers, cloud engineers, data specialists, and product leaders in weeks—not months.</p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-primary">Hire Talent</a>
+          <a href="#roles" class="btn btn-outline">I'm a Candidate</a>
+        </div>
+        <div class="badges">
+          <div class="badge"><img src="assets/icons/lightning.svg" alt="Lightning" /> 5–10 day shortlists</div>
+          <div class="badge"><img src="assets/icons/shield.svg" alt="Shield" /> Vetted candidates</div>
+          <div class="badge"><img src="assets/icons/globe.svg" alt="Globe" /> Global remote reach</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="grid"></div>
+        <div class="shine"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <h2 class="section-title">What we do</h2>
+      <div class="cards three">
+        <article class="card">
+          <div class="card-icon"><img src="assets/icons/search.svg" alt=""></div>
+          <h3>Tech Hiring</h3>
+          <p>End‑to‑end recruiting for software, data, DevOps, QA, and product roles—contract or full‑time.</p>
+          <ul class="list">
+            <li>Role scoping &amp; scorecards</li>
+            <li>Outbound sourcing &amp; screening</li>
+            <li>Interview panel design</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/icons/stack.svg" alt=""></div>
+          <h3>Embedded Recruiters</h3>
+          <p>Dedicated recruiters that operate as your in‑house team to accelerate hiring sprints.</p>
+          <ul class="list">
+            <li>ATS setup &amp; workflows</li>
+            <li>Employer branding</li>
+            <li>Offer &amp; onboarding support</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-icon"><img src="assets/icons/rocket.svg" alt=""></div>
+          <h3>Executive Search</h3>
+          <p>Leadership hiring for Heads of Engineering, CTO, VP Product, and Data leaders.</p>
+          <ul class="list">
+            <li>Market mapping</li>
+            <li>Targeted outreach</li>
+            <li>Confidential search</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Roles -->
+    <section id="roles" class="section section-alt">
+      <h2 class="section-title">Featured openings</h2>
+      <div class="role-filter">
+        <input id="roleSearch" type="search" placeholder="Search roles, e.g., React, DevOps, Data…">
+      </div>
+      <div id="roleList" class="list-rows">
+        <!-- Filled by script.js -->
+      </div>
+      <div class="center mt-4">
+        <a href="#contact" class="btn btn-outline">Share your resume</a>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section">
+      <h2 class="section-title">How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Intake</h3>
+          <p>30‑minute role intake to align on must‑haves, timelines, and interview plan.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Shortlist</h3>
+          <p>Within 5–10 business days we present senior candidates with project portfolios.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Hire</h3>
+          <p>We coordinate interviews, feedback, offers, and start dates—end‑to‑end.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="section section-alt">
+      <h2 class="section-title">Trusted by teams building the future</h2>
+      <div class="logos">
+        <img src="assets/icons/logo1.svg" alt="Client 1">
+        <img src="assets/icons/logo2.svg" alt="Client 2">
+        <img src="assets/icons/logo3.svg" alt="Client 3">
+        <img src="assets/icons/logo4.svg" alt="Client 4">
+        <img src="assets/icons/logo5.svg" alt="Client 5">
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="count" data-target="96">0</span>% Offer Acceptance</div>
+        <div class="stat"><span class="count" data-target="14">0</span> Days to Shortlist</div>
+        <div class="stat"><span class="count" data-target="40">0</span>% Diversity Hires</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Let’s talk</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="card form-card" novalidate>
+          <div class="row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your full name">
+            <small class="error">Please enter your name</small>
+          </div>
+          <div class="row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com">
+            <small class="error">Please add a valid email</small>
+          </div>
+          <div class="row">
+            <label for="type">I’m looking to</label>
+            <select id="type" name="type" required>
+              <option value="">Select one</option>
+              <option>Hire talent</option>
+              <option>Apply for a role</option>
+              <option>Build a talent pipeline</option>
+            </select>
+            <small class="error">Please select an option</small>
+          </div>
+          <div class="row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p id="formNote" class="form-note">This demo form runs client‑side only. Replace with your form endpoint or email handler.</p>
+        </form>
+
+        <aside class="card contact-card">
+          <h3>Contact details</h3>
+          <ul class="contact-list">
+            <li><img src="assets/icons/mail.svg" alt=""> hello@dptrnrecruit.com</li>
+            <li><img src="assets/icons/phone.svg" alt=""> +91 98765 43210</li>
+            <li><img src="assets/icons/pin.svg" alt=""> Chennai • Remote‑first</li>
+          </ul>
+          <div class="map" aria-hidden="true"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cols">
+      <div>
+        <a class="brand"><img src="assets/icons/logo.svg" alt="" width="28" height="28"><span>DPTRN Recruit</span></a>
+        <p>Specialists in IT recruiting across India, APAC, and remote roles worldwide.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#clients">Clients</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#" aria-disabled="true">Case studies</a></li>
+          <li><a href="#" aria-disabled="true">Salary guide</a></li>
+          <li><a href="#" aria-disabled="true">Interview kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" aria-disabled="true">Privacy</a></li>
+          <li><a href="#" aria-disabled="true">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> DPTRN Recruit. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
