@@ -1,0 +1,27 @@
+html { scroll-behavior: smooth; }
+    .btn-gradient {
+      background: linear-gradient(90deg,var(--accent),var(--brand-2));
+      color: #fff;
+      border: none;
+    }
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+    .hover-scale { transition: transform .3s ease; }
+    .hover-scale:hover { transform: scale(1.05); }
+    .count { font-size: 2.5rem; font-weight: bold; }
+    /* Ensure theme toggles entire palette automatically */
+    [data-bs-theme="light"] {
+      --bs-body-bg: #f8f9fa;
+      --bs-body-color: #212529;
+      --bs-card-bg: #ffffff;
+      --bs-card-color: #212529;
+      --bs-border-color: #dee2e6;
+    }
+    [data-bs-theme="dark"] {
+      --bs-body-bg: #121212;
+      --bs-body-color: #f1f1f1;
+      --bs-card-bg: #1e1e1e;
+      --bs-card-color: #f1f1f1;
+      --bs-border-color: #444;
+    }
